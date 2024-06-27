@@ -1,8 +1,11 @@
 import { config } from "dotenv";
 import { resolve } from "path";
 config({ path: resolve(__dirname, "..", ".env") });
+//import dotenv from 'dotenv';
+//dotenv.config();
 
-export const MONGODB_URI = process.env.MONGODB_URI;
+
+export const MONGODB_URI = process.env.MONGO_URI;
 export const PORT = process.env.PORT;
 export const SECRET = process.env.SECRET;
 export const ADMIN_EMAIL = process.env.ADMIN_EMAIL;
